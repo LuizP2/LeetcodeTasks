@@ -1,5 +1,5 @@
 class Solution:
-    def isHappy(self, n: int) -> bool: 
+    def isHappy(n: int) -> bool: 
         hset = set() #Cria um objeto hset que irá receber n
         while n != 1:
             hset.add(n) #Adiciona a variavel n no objeto hset
@@ -9,3 +9,4 @@ class Solution:
         else:
             return True
     
+    print(isHappy(input("Digite o numero feliz : ")))

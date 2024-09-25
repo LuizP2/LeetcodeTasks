@@ -1,6 +1,6 @@
 class Solution:
 
-  def romanToInt(self, s: str) -> int:
+  def romanToInt(s: str) -> int:
     ans = 0 #variavel que acumula o resultado
     roman = { 'I': 1,
               'V': 5,
@@ -17,3 +17,5 @@ class Solution:
         ans += roman[a] #Falso: adiciona o valor de A ao resultado final
 
     return ans + roman[s[-1]] #Adiciona o valor do ultimo caractere romano (s) ao resultado final (ans)
+  
+  print(romanToInt(input("Digite um numero romano: "))) #Input
